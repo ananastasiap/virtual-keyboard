@@ -3,6 +3,21 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
+  background: #2bf152;
+}
+
+.textarea {
+  margin: 0 256px;
+  margin-top: 50px;
+  width: 65%;
+  height: 200px;
+  border: 2px solid #368245;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  resize: none;
 }
 
 .keyboard {
@@ -10,9 +25,13 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  margin: 0 auto;
+  margin-top: 25px;
   padding: 10px;
   background: #09b72c5f;
   border: 2px solid #368245;
+  border-radius: 20px;
   width: 65%;
 }
 
