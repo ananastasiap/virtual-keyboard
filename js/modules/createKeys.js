@@ -1,3 +1,6 @@
+export const keyboard = document.createElement('div');
+keyboard.classList.add('keyboard');
+
 export const createKeys = () => {
   const row1 = {
     Backquote: ['`', '~', 'ё', 'Ё'],
@@ -76,9 +79,6 @@ export const createKeys = () => {
     ArrowDown: ['↓', 'forFunctions'],
     ArrowRight: ['→', 'forFunctions']
   };
-
-  const keyboard = document.createElement('div');
-  keyboard.classList.add('keyboard');
 
   const createKeys = (row) => {
     for (const key in row) {

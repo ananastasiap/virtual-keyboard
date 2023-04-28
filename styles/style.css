@@ -58,3 +58,8 @@
   color: #fff;
   background: #09b72c5f;
 }
+
+.button.active {
+  color: #fff;
+  background: #09b72c5f;
+}
