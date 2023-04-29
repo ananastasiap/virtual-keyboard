@@ -1,6 +1,8 @@
 export const keyboard = document.createElement('div');
 keyboard.classList.add('keyboard');
 
+export const buttons = [];
+
 export const createKeys = () => {
   const row1 = {
     Backquote: ['`', '~', 'ё', 'Ё'],
@@ -108,6 +110,7 @@ export const createKeys = () => {
       const label = document.createTextNode(row[key][0]);
       button.appendChild(label);
       keyboard.appendChild(button);
+      buttons.push(button);
     }
 
     document.body.appendChild(keyboard);
