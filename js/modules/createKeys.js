@@ -1,6 +1,8 @@
 export const keyboard = document.createElement('div');
 keyboard.classList.add('keyboard');
 
+export const buttons = [];
+
 export const createKeys = () => {
   // an object has 5 sub-object, each sub-object have buttons in a form of array
   const keyboardRows = [
@@ -418,6 +420,8 @@ export const createKeys = () => {
       return keyElement;
     })
   );
+
+  buttons.push(keys);
 
   keys.forEach(row => {
     const rowElement = document.createElement('div');

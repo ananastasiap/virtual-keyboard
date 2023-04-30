@@ -1,6 +1,5 @@
-import { buttons } from './createKeys.js';
-
 export const withMouse = () => {
+  const buttons = document.querySelectorAll('.button');
   buttons.forEach(button => {
     button.addEventListener('mousedown', () => {
       button.classList.add('active');
