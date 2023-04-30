@@ -29,10 +29,15 @@
   margin: 0 auto;
   margin-top: 25px;
   padding: 10px;
-  background: #09b72c5f;
+  /* background: #09b72c5f; */
   border: 2px solid #368245;
   border-radius: 20px;
   width: 65%;
+}
+
+.keyboard__row {
+  display: flex;
+  justify-content: center;
 }
 
 .button {
@@ -57,9 +62,4 @@
 .button:hover {
   color: #fff;
   background: #38413a5f;
-}
-
-.button.active {
-  color: #fff;
-  background: #09b72c5f;
 }

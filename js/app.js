@@ -1,8 +1,5 @@
-import { createTextarea, createKeys, withKeyboard, withMouse } from './modules/index.js';
+import { createKeys } from './modules/index.js';
 
 window.addEventListener('DOMContentLoaded', () => {
-  createTextarea();
   createKeys();
-  withKeyboard();
-  withMouse();
 });
