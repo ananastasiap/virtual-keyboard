@@ -1,9 +1,9 @@
-{
+export default {
     "env": {
         "browser": true,
         "es2021": true
     },
-    "extends": "standard",
+    "extends": "eslint:recommended",
     "overrides": [
     ],
     "parserOptions": {
@@ -11,7 +11,5 @@
         "sourceType": "module"
     },
     "rules": {
-        "semi": ["error", "always"]
     }
-
-}
+};

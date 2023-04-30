@@ -176,14 +176,8 @@ export const createKeys = () => {
         eventCode: 'Backslash',
         lang: { en: '\\', ru: '\\' },
         canControl: false,
-        width: '60'
+        width: '120'
       },
-      {
-        eventCode: 'Delete',
-        lang: { en: 'Del', ru: 'Del' },
-        canControl: true,
-        width: '60'
-      }
     ],
 
     [

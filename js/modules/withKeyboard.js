@@ -2,10 +2,27 @@ import { keyboard } from './createKeys.js';
 
 export const withKeyboard = () => {
   document.addEventListener('keydown', event => {
+    let isCapsLockEnabled = false;
+    event.preventDefault();
     const key = event.code;
     const button = keyboard.querySelector(`[data-code="${key}"]`);
     const textarea = document.querySelector('.textarea');
-    textarea.value += event.key;
+
+    if (event.key === 'Tab') {
+      textarea.value += '  ';
+    } else if (event.key === 'Backspace') {
+      textarea.value = textarea.value.slice(0, -1);
+    } else if (event.key === 'Enter') {
+      textarea.value += '\n';
+    } else if (event.code === 'ControlLeft' || event.code === 'ControlRight') {
+      textarea.value += '';
+    } else if (event.code === 'AltLeft' || event.code === 'AltRight') {
+      textarea.value += '';
+    } else if (event.code === 'MetaLeft') {
+      textarea.value += '';
+    } else {
+      textarea.value += event.key;
+    }
 
     if (button) {
       button.classList.add('active');
