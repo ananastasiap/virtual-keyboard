@@ -410,6 +410,7 @@ export const createKeys = () => {
     row.map(key => {
       const keyElement = document.createElement('button');
       keyElement.setAttribute('type', 'button');
+      keyElement.setAttribute('data-code', key);
       keyElement.classList.add('button');
       keyElement.dataset.code = key.eventCode;
       keyElement.style.width = `${key.width}px`;
