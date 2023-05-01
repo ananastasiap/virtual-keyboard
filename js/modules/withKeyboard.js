@@ -2,7 +2,6 @@ import { keyboard } from './createKeys.js';
 
 export const withKeyboard = () => {
   document.addEventListener('keydown', event => {
-    let isCapsLockEnabled = false;
     event.preventDefault();
     const key = event.code;
     const button = keyboard.querySelector(`[data-code="${key}"]`);
@@ -20,6 +19,16 @@ export const withKeyboard = () => {
       textarea.value += '';
     } else if (event.code === 'MetaLeft') {
       textarea.value += '';
+    } else if (event.key === 'ArrowRight') {
+      const cursorPosition = textarea.selectionStart;
+      textarea.setSelectionRange(cursorPosition + 1, cursorPosition + 1);
+    } else if (event.key === 'ArrowLeft') {
+      const cursorPosition = textarea.selectionStart;
+      textarea.setSelectionRange(cursorPosition - 1, cursorPosition - 1);
+    } else if (event.key === 'ArrowDown') {
+      textarea.setSelectionRange(textarea.value.length, textarea.value.length);
+    } else if (event.key === 'ArrowUp') {
+      textarea.setSelectionRange(0, 0);
     } else {
       textarea.value += event.key;
     }
