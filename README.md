@@ -1,2 +1,2 @@
 # virtual-keyboard
-Virtual Keyboard (eng/ru)
+Virtual Keyboard
