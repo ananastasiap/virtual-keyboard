@@ -351,7 +351,7 @@ export const createKeys = () => {
       keyElement.classList.add('button');
       keyElement.dataset.code = key.eventCode;
       keyElement.style.width = `${key.width}px`;
-      keyElement.textContent = key.lang.ru;
+      keyElement.textContent = key.lang.en;
       return keyElement;
     })
   );
