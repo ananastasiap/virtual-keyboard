@@ -19,6 +19,7 @@
   color: #BCD6CB;
   resize: none;
   box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.75);
+  caret: 5px solid #128C9C;
   /* overflow: hidden; */
 }
 

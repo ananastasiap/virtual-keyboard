@@ -17,7 +17,7 @@ export const withKeyboard = () => {
       textarea.value += '';
     } else if (event.code === 'AltLeft' || event.code === 'AltRight') {
       textarea.value += '';
-    } else if (event.code === 'MetaLeft') {
+    } else if (event.code === 'MetaLeft' || event.code === 'CapsLock') {
       textarea.value += '';
     } else if (event.key === 'ArrowRight') {
       const cursorPosition = textarea.selectionStart;
