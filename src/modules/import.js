@@ -1,0 +1,1 @@
+export { PrintArea } from './printArea.js';

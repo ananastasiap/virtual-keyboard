@@ -1,4 +1,10 @@
 @import 'normalize.css';
-@import './scss/variables';
-@import './scss/style';
-@import './scss/fonts';
+
+@import './scss/abstracts/variables';
+
+@import './scss/base/base';
+@import './scss/base/fonts';
+@import './scss/base/typography';
+@import './scss/base/utilities';
+
+@import './scss/layout/wholeBody';
