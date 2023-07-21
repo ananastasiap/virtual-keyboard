@@ -2,7 +2,7 @@ export class PrintArea {
   constructor() {
   }
 
-  createTextArea() {
+  createPrintArea() {
     const printArea = document.createElement('textarea');
     printArea.classList.add('textarea');
     document.body.appendChild(printArea);
