@@ -67,15 +67,15 @@ export const keyboardList = [
     {
       key: 'Backspace',
       eventCode: 'Backspace',
-      // size: 2,
-      // isControlKey: true,
+      keySize: 'small-big',
+      isControlKey: true,
     },
   ],
   [
     {
       key: 'Tab',
       eventCode: 'Tab',
-      // isControlKey: true
+      isControlKey: true,
     },
     {
       key: { ru: 'й', en: 'q' },
@@ -133,15 +133,15 @@ export const keyboardList = [
     {
       key: 'Del',
       eventCode: 'Delete',
-      // isControlKey: true,
+      isControlKey: true,
     },
   ],
   [
     {
       key: 'CapsLock',
       eventCode: 'CapsLock',
-      // size: 2,
-      // isControlKey: true,
+      keySize: 'small-big',
+      isControlKey: true,
     },
     {
       key: { ru: 'ф', en: 'a' },
@@ -190,16 +190,16 @@ export const keyboardList = [
     {
       key: 'Enter',
       eventCode: 'Enter',
-      // size: 2,
-      // isControlKey: true,
+      keySize: 'small-big',
+      isControlKey: true,
     },
   ],
   [
     {
       key: 'Shift',
       eventCode: 'ShiftLeft',
-      // size: '2-half',
-      // isControlKey: true,
+      keySize: 'big',
+      isControlKey: true,
     },
     {
       key: { ru: 'я', en: 'z' },
@@ -244,49 +244,49 @@ export const keyboardList = [
     {
       key: 'Shift',
       eventCode: 'ShiftRight',
-      // size: '2-half',
-      // isControlKey: true,
+      keySize: 'big',
+      isControlKey: true,
     },
   ],
   [
     {
       key: 'Ctrl',
       eventCode: 'ControlLeft',
-      size: '1-half',
+      keySize: 'small',
       isControlKey: true,
     },
     {
       key: 'Win',
       eventCode: 'MetaLeft',
-      size: '1-half',
+      keySize: 'small',
       isControlKey: true,
     },
     {
       key: 'Alt',
       eventCode: 'AltLeft',
-      size: '1-half',
+      keySize: 'small',
       isControlKey: true,
     },
     { key: '',
       eventCode: 'Space',
-      size: 6,
+      keySize: 'large',
     },
     {
       key: 'Alt',
       eventCode: 'AltRight',
-      size: '1-half',
+      keySize: 'small',
       isControlKey: true,
     },
     {
       key: 'Win',
       eventCode: 'MetaRight',
-      size: '1-half',
+      keySize: 'small',
       isControlKey: true,
     },
     {
       key: 'Ctrl',
       eventCode: 'ControlRight',
-      size: '1-half',
+      keySize: 'small',
       isControlKey: true,
     },
   ],
