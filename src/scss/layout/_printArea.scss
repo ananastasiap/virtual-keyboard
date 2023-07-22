@@ -1,0 +1,23 @@
+.printArea {
+  width: 65%;
+  height: 20%;
+  padding: 1rem;
+
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  color: $color-primary;
+
+  border: 2px solid $color-primary;
+  background-color: transparent;
+  border-radius: 2rem;
+
+  box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.75);
+  caret-color: $color-secondary;
+  resize: none;
+
+  &:focus {
+    outline: none;
+    border-color: $color-secondary;
+    background-color: rgba($color-secondary, 0.30);
+  }
+}
